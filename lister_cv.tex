@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+\usepackage[margin=2.0cm]{geometry} % geom package
+\usepackage{tabto}					% alignment
+\usepackage{fontawesome}            % symbols
+\usepackage{stix}
+\usepackage{array}			        % colors
+\usepackage[dvipsnames]{xcolor}     % colors
+\definecolor{themecol}{rgb}{0.529, 0.639, 0.188}
+
+\usepackage{longtable}
+\newcolumntype{L}{>{\raggedleft}p{0.15\textwidth}}
+\newcolumntype{R}{p{0.85\textwidth}}
+
+% custom commands
+\newcommand\VRule{\color{themecol}\vrule width 2pt}
+\newcommand{\titl}{\color{themecol}\raisebox{1pt}{$\lgblksquare$}\color{black}\ }
+
+
+%% all bibliography stuff
+\newif\ifshowcitations\showcitationsfalse%
+\newif\ifshowlinks\showlinksfalse%
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
+\usepackage{enumitem}
+\usepackage{bibunits}
+
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\begin{minipage}{0.95\textwidth}
+\begin{flushright}
+\Huge{\textbf{ADAM LISTER}}\\
+\Huge{\textbf{CURRICULUM VITAE}}\\
+\end{flushright}
+\end{minipage}\\
+
+\vspace{3em}
+
+\begin{minipage}{1.0\textwidth}
+\flushright{\begin{minipage}[ht]{0.95\textwidth}
+\begin{flushright}
+Chamberlin Hall, University of Wisconsin-Madison, WI, 53706\\
+adam.lister@wisc.edu\\
+adam-lister.com \\
++1 (608) 977-4164\\
+\end{flushright}
+\end{minipage}}
+\begin{minipage}[ht]{0.04\textwidth}
+\centering
+\color{themecol}
+\raisebox{3pt}{\faMapMarker}\\
+\raisebox{3pt}{\faEnvelope}\\
+\raisebox{3pt}{\faMousePointer}\\
+\raisebox{3pt}{\faPhone}
+\end{minipage}
+\end{minipage}
+
+
+\section*{\titl RESEARCH INTERESTS}
+  Neutrino Physics $\cdot$ Neutrino Interactions $\cdot$ Neutrino Oscillations $\cdot$ Sterile Neutrino Searches $\cdot$ LArTPC R\&D $\cdot$ Detector Calibration
+
+\section*{\titl ACADEMIC POSITIONS}
+\noindent\begin{longtable}{L!{\VRule}R}
+2019--present&{\bf Postdoctoral Research Associate, University of Wisconsin - Madison.}
+\end{longtable}
+
+\section*{\titl EDUCATION}
+\noindent\begin{longtable}{L!{\VRule}R}
+
+2015--2019&{\bf PhD Experimental Particle Physics, Lancaster University.}\\
+&{Thesis Title:\tabto{2.5cm} Constraint of Systematic Uncertainties in an Electron Neutrino  \tabto{2.5cm} Search Using Muon Neutrinos at MicroBooNE
+
+Advisors:\tabto{2.5cm} Dr Andrew Blake, Dr Jaroslaw Nowak
+
+}\\[5pt]
+
+2013--2014&{\bf MSc Particles, Strings and Cosmology, Durham University.}\\
+&{Thesis Title:\tabto{2.5cm} Neutrino Oscillations in Long Baseline Experiments
+
+Advisor:\tabto{2.5cm} Prof. Silvia Pascoli
+
+}\\[5pt]
+
+2010--2013&{\bf BSc Astrophysics (1st class), Aberystwyth University.}\\
+
+\end{longtable}
+
+\section*{\titl AWARDS}
+\noindent\begin{tabular}{L!{\VRule}R}
+2019&{\bf Lancaster University Department Prize}\\[5pt]
+2018&{\bf Fermilab Neutrino Physics Center Fellowship
+}\\[5pt]
+%2017&{\bf Excellent Student Presentation Award, International Neutrino Summer School}\\[5pt]
+2017&{\bf Poster Prize, Fermilab Users' Meeting}\\
+
+\end{tabular}
+
+\section*{\titl PRESENTATIONS}
+
+\noindent\begin{tabular}{L!{\VRule}R}
+2018&{University of Wisconsin --- Madison seminar, MicroBooNE and the Path to Resolving the MiniBooNE Low-Energy Excess
+}\\[5pt]
+2018&{IOP HEPP and APP Meeting parallel session, Measuring Electron Diffusion in MicroBooNE}\\[5pt]
+2017&{Fermilab Users' Meeting Poster, Towards a Longitudinal Electron Diffusion Measurement in MicroBooNE}\\[5pt]
+2016&{Neutrino 2016 Poster, Measurements of Muon Neutrino Charged-Current Interactions by the MicroBooNE Experiment}\\
+\end{tabular}
+
+%\section*{SELECT PAPERS}
+%\begin{bibunit}[ieeetr]
+%  \nocite{Reference1, Reference2}
+%  \putbib[bibname]
+%\end{bibunit}
+
+\section*{\titl PUBLIC OUTREACH}
+
+\noindent\begin{tabular}{L!{\VRule}R}
+2018&{Saturday Morning Physics On-Site Coordinator}\\[5pt]
+2018&{MicroBooNE Tour Guide}\\[5pt]
+2018&{"Particle Physics in the US", Lancaster Uninversity Physics Masterclass}\\[5pt]
+2017&{LAr and High Voltage Station, Fermilab Open House}\\[5pt]
+2016&{Particle Physics Masterclass, Lancaster University Physics Masterclass}\\[5pt]
+2015-2016&{Special Relativity Workshop, Lancaster University Physics Masterclass}\\
+\end{tabular}
+
+\end{document}

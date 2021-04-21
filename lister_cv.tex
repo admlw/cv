@@ -15,6 +15,12 @@
 \newcommand\VRule{\color{themecol}\vrule width 2pt}
 \newcommand{\titl}{\color{themecol}\raisebox{1pt}{$\lgblksquare$}\color{black}\ }
 
+\usepackage{hyperref}
+\hypersetup{
+     colorlinks=true,
+     linkcolor=themecol,   
+     urlcolor=themecol,
+     }
 
 %% all bibliography stuff
 \newif\ifshowcitations\showcitationsfalse%
@@ -92,12 +98,16 @@ Advisor:\tabto{2.5cm} Prof. Silvia Pascoli
 
 \end{longtable}
 
+\section*{\titl LEADERSHIP POSITIONS}
+\noindent\begin{tabular}{L!{\VRule}R}
+2020-present&{\bf NOvA Production Convener}
+\end{tabular}
+
 \section*{\titl AWARDS}
 \noindent\begin{tabular}{L!{\VRule}R}
 2019&{\bf Lancaster University Department Prize}\\[5pt]
 2018&{\bf Fermilab Neutrino Physics Center Fellowship
 }\\[5pt]
-%2017&{\bf Excellent Student Presentation Award, International Neutrino Summer School}\\[5pt]
 2017&{\bf Poster Prize, Fermilab Users' Meeting}\\
 
 \end{tabular}
@@ -128,5 +138,10 @@ Advisor:\tabto{2.5cm} Prof. Silvia Pascoli
 2016&{Particle Physics Masterclass, Lancaster University Physics Masterclass}\\[5pt]
 2015-2016&{Special Relativity Workshop, Lancaster University Physics Masterclass}\\
 \end{tabular}
+
+\section*{\titl SELECT PUBLICATIONS}
+\bibliographystyle{jhep}
+\nocite{Abratenko:2021jwb, Abratenko:2020sga, Abi:2020loh}
+\bibliography{bibliography}
 
 \end{document}

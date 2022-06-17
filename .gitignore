@@ -4,3 +4,7 @@
 *.fdb_latexmk 
 *.fls 
 *.log
+.DS_Store
+*.dvi
+*.out
+*.synctex.gz
